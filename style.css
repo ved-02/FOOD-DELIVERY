@@ -1,0 +1,191 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* css variables */
+:root{
+    --navbar--height:59px
+}
+/* NAVIGATION STYLING */
+#logo{
+    width: 125px;
+}
+#logo img{
+    padding: 10px;
+    width: 90px;
+}
+
+#navbar {
+    position:sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+}
+#navbar ul{
+    display: flex;
+    align-items: center;
+}
+nav ::before{
+    content: '';
+    position: absolute;
+    top:0;
+    left:0;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.06;
+}
+#navbar li{
+    list-style: none;
+    font-size: 1.5rem;
+}
+#navbar li a{
+    display: block;
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+    margin: 5px;
+}
+#navbar li a:hover{
+    display: block;
+    color: black;
+    padding: 15px;
+    text-decoration: none;
+    margin: 5px;
+}
+
+
+/* HOME STYLING */
+
+
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 100px;
+    height: 470px;
+}
+#home ::before{
+    content: '';
+    background:url(/home.jpg) no-repeat center center/cover; 
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 90%;
+    width: 100%;
+    z-index: -2;
+    opacity: 0.5;
+}
+#home h3{
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+}
+#home p{
+    font-size: 1.2em;
+    padding: 10px ;
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+}
+#home button{
+    font-family: 'Roboto Slab', serif;
+}
+#home button:hover{
+    font-family: 'Roboto Slab', serif;
+}
+/* services */
+#ourservices{
+    background-color: white;
+    border:2px solid black;
+    border-radius: 5px;
+}
+#ourservices h2{
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+}
+.servicebox{
+    display: flex;
+    justify-content: center;
+    align-content:space-around;
+    flex-wrap: wrap;
+}
+.services{
+    display: flex;
+    border: 2px solid black;
+    background-color: rgb(235, 222, 205);
+    border-radius: 4px;
+    flex-direction: column;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    font-family: 'Roboto Slab', serif;
+}
+.services img{
+    width: 100px;
+}
+/* clients */
+#clients{
+    margin: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+#clients h2{
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    
+}
+#clients div{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.clientlogo{
+    width:10%;
+    margin: 10px;
+}
+.clients::before{
+    content: "";
+    background: url(/clientbg.jpg);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.6;
+}
+/* footer */
+footer p{
+    text-align: center;
+}
+/* utility classes */
+.heading1{
+    font-size: 2rem;
+    padding: 10px;
+}
+.heading{
+    font-size: 1.3rem;
+    padding: 10px;
+}
+.btn{
+    border-radius: 5px;
+    border: 1px solid black;
+    font-size: 1.06em;
+    padding: 6px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-size: 1.06em;
+    padding: 6px;
+    cursor: pointer;
+}
